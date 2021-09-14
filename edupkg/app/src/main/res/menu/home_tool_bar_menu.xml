@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <!--app:showAsAction="never" 折叠成三个点-->
+    <item
+        android:id="@+id/chinese"
+        android:title="添加/删除 语文"
+        app:showAsAction="never"/>
+    <item
+        android:id="@+id/math"
+        android:title="添加/删除 数学"
+        app:showAsAction="never"/>
+    <item
+        android:id="@+id/english"
+        android:title="添加/删除 英语"
+        app:showAsAction="never"/>
+    <item
+        android:id="@+id/physics"
+        android:title="添加/删除 物理"
+        app:showAsAction="never"/>
+    <item
+        android:id="@+id/chemistry"
+        android:title="添加/删除 化学"
+        app:showAsAction="never"/>
+    <item
+        android:id="@+id/history"
+        android:title="添加/删除 历史"
+        app:showAsAction="never"/>
+    <item
+        android:id="@+id/geo"
+        android:title="添加/删除 地理"
+        app:showAsAction="never"/>
+    <item
+        android:id="@+id/biology"
+        android:title="添加/删除 生物"
+        app:showAsAction="never"/>
+    <item
+        android:id="@+id/politics"
+        android:title="添加/删除 政治"
+        app:showAsAction="never"/>
+
+
+
+    <!--app:showAsAction="always" 正常显示菜单项-->
+
+
+
+</menu>

@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:id="@+id/entity_page"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_margin="36sp">
+
+            <TextView
+                android:id="@+id/entityLable"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="TextView"
+                android:textColor="#000000"
+                android:textStyle="bold"
+                android:textSize="32sp"
+                />
+            <View
+                style="@style/personDividerThin"
+                />
+            <TextView
+                android:id="@+id/entitySubject"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="TextView"
+                android:textSize="16sp"
+                />
+
+            <TextView
+                android:id="@+id/Property"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:text="属性"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                />
+
+            <ListView
+                android:id="@+id/propertyList"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                />
+
+            <TextView
+                android:id="@+id/Relation"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:text="关系"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                />
+
+            <ListView
+                android:id="@+id/subjectList"
+                android:layout_width="match_parent"
+                android:layout_height="210dp" />
+
+            <View
+                android:id="@+id/entity_ac_divider"
+                style="@style/entityDivider" />
+
+            <ListView
+                android:id="@+id/objectList"
+                android:layout_width="match_parent"
+                android:layout_height="210dp" />
+
+            <TextView
+                android:id="@+id/showExercise"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:text="显示习题"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                />
+
+            <TextView
+                android:id="@+id/current"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="invisible"
+                android:textSize="12sp"
+                android:text="TextView" />
+
+            <TextView
+                android:id="@+id/exercise"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="invisible"
+                android:textSize="18sp"
+                android:text="TextView" />
+
+            <TextView
+                android:id="@+id/showAnswer"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:text="显示答案"
+                android:visibility="invisible"
+                android:textStyle="bold"
+                android:textSize="18sp"/>
+
+            <TextView
+                android:id="@+id/answer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="invisible"
+                android:textSize="18sp"
+                android:text="TextView" />
+            <TextView
+                android:id="@+id/help"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:visibility="invisible"
+                android:textSize="18sp"
+                android:text="TextView" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

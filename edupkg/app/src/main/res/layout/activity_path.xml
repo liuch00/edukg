@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_marginTop="60dp"
+    android:layout_marginBottom="300dp">
+
+
+    <EditText
+        android:id="@+id/path_sour"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="60dp"
+        android:layout_marginLeft="60dp"
+        android:layout_marginBottom="40dp"
+        android:background="#F4F4F4"
+        android:cursorVisible="true"
+        android:imeOptions="actionSearch"
+        android:singleLine="true"
+        android:textCursorDrawable="@drawable/text_cursor_drawable"
+        tools:ignore="MissingConstraints">
+
+    </EditText>
+    <EditText
+        android:id="@+id/path_des"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="60dp"
+        android:layout_marginLeft="60dp"
+        android:layout_marginBottom="40dp"
+        android:background="#F4F4F4"
+        android:cursorVisible="true"
+        android:imeOptions="actionSearch"
+        android:singleLine="true"
+        android:textCursorDrawable="@drawable/text_cursor_drawable"
+        tools:ignore="MissingConstraints">
+
+    </EditText>
+
+    <TextView
+        android:id="@+id/path_search"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_weight="1"
+        android:clickable="true"
+        android:drawableTop="@drawable/ic_search"
+        android:drawablePadding="5dp"
+        android:gravity="center"
+        android:rotationX="0"
+        android:text="点击寻路"
+        android:textColor="@color/person_label"
+        android:textSize="12sp"
+
+        />
+
+</LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

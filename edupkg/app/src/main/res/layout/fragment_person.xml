@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".data.PersonFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <!--头部背景-->
+        <ImageView
+            android:id="@+id/iv_bg"
+            android:layout_width="match_parent"
+            android:layout_height="146dp"
+            android:background="@mipmap/person_head_bg" />
+
+        <!--头部用户信息-->
+
+        <LinearLayout
+            android:id="@+id/ll_top"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="15dp"
+            android:orientation="horizontal">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:src="@mipmap/pink" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="1"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:text="123"
+                android:textColor="@color/white"
+                android:textSize="16.0sp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@mipmap/right_arrow" />
+
+
+        </LinearLayout>
+
+
+        <!--头部阅读数、做题数、使用天数-->
+        <LinearLayout
+            android:id="@+id/ll_count"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/iv_bg"
+            android:layout_marginTop="18.0dip"
+            android:layout_marginBottom="23.0dip"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0.0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:alpha="0.9"
+                    android:text="0"
+                    android:textColor="@color/white"
+                    android:textSize="16.0sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:alpha="0.5"
+                    android:text="@string/have_learned_num"
+                    android:textColor="@color/white"
+                    android:textSize="12.0sp" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="0.0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:alpha="0.9"
+                    android:text="0"
+                    android:textColor="@color/white"
+                    android:textSize="16.0sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:alpha="0.5"
+                    android:text="@string/do_exercise_num"
+                    android:textColor="@color/white"
+                    android:textSize="12.0sp" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="0.0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:alpha="0.9"
+                    android:text="0"
+                    android:textColor="@color/white"
+                    android:textSize="16.0sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:alpha="0.5"
+                    android:text="@string/have_used_day"
+                    android:textColor="@color/white"
+                    android:textSize="12.0sp" />
+            </LinearLayout>
+        </LinearLayout>
+
+
+        <!--内容-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ll_count"
+            android:orientation="vertical">
+
+            <!--收藏、历史、本地-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:clickable="true"
+                    android:id="@+id/my_favorite"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:drawableTop="@mipmap/person_collect"
+                    android:drawablePadding="5dp"
+                    android:gravity="center"
+                    android:rotationX="0"
+                    android:text="@string/collect"
+                    android:textColor="@color/person_label"
+                    android:textSize="12sp"
+
+                    />
+
+                <TextView
+                    android:clickable="true"
+                    android:id="@+id/my_history"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:drawableTop="@mipmap/person_history"
+                    android:drawablePadding="5dp"
+                    android:gravity="center"
+                    android:text="@string/history"
+                    android:textColor="@color/person_label"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:clickable="true"
+                    android:id="@+id/my_local"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:drawableTop="@mipmap/person_local"
+                    android:drawablePadding="5dp"
+                    android:gravity="center"
+                    android:text="@string/local"
+                    android:textColor="@color/person_label"
+                    android:textSize="12sp" />
+
+            </LinearLayout>
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:background="#F3F5F4" />
+
+
+            <ListView
+                android:id="@+id/setup_list"
+                android:layout_width="match_parent"
+                android:layout_height="210dp" />
+
+
+<!--            <TextView-->
+<!--                android:id="@+id/delete_cache"-->
+<!--                style="@style/personTvLeft"-->
+<!--                android:layout_height="40dp"-->
+<!--                android:text="@string/delete_cache"-->
+<!--                android:textColor="#222222"-->
+<!--                android:textSize="18sp" />-->
+
+
+<!--            <View-->
+<!--                style="@style/personDivider"-->
+<!--                android:layout_marginLeft="15dp" />-->
+
+
+<!--            <TextView-->
+<!--                -->
+<!--                style="@style/personTvLeft"-->
+<!--                android:layout_height="40dp"-->
+<!--                android:text="@string/stream_saving_mode"-->
+<!--                android:textColor="#222222"-->
+<!--                android:textSize="18sp" />-->
+
+
+<!--            <View-->
+<!--                style="@style/personDivider"-->
+<!--                android:layout_marginLeft="15dp" />-->
+
+
+<!--            <TextView-->
+<!--                style="@style/personTvLeft"-->
+<!--                android:layout_height="40dp"-->
+<!--                android:text="@string/version_information"-->
+<!--                android:textColor="#222222"-->
+<!--                android:textSize="18sp" />-->
+
+
+<!--            <View-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="8dp"-->
+<!--                android:background="#F3F5F4" />-->
+
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+
+</FrameLayout>
